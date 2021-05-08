@@ -5,9 +5,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://images.pexels.com/photos/262713/pexels-photo-262713.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.homepage-list { 
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 20px
+}
+
+button {
+  padding: 5px;
+  margin: 20px;
+  background-color: black;
+  color: white;
+}
+
+.about-content {
+  margin-top: 20%;
+  margin-bottom: 30%;
+}
+
+.home-content {
+  margin-top: 20%;
+  margin-bottom: 20%;
 }

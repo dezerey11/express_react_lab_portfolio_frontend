@@ -17,17 +17,16 @@ function Projects(props) {
         <h1>{project.name}</h1>
         <img src={project.image} />
         <a href={project.git}>
-          <button>Github</button>
+          <button><strong>Github</strong> for {project.name}</button>
         </a>
         <a href={project.live}>
-          <button>live site</button>
+          <button><strong>Live Site</strong> for {project.name}</button>
         </a>
       </div>
     ));
   };
 
   return projects ? loaded() : <h1>Loading...</h1>;
-
 };
 
 export default Projects;

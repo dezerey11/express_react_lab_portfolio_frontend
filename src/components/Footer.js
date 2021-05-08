@@ -1,5 +1,19 @@
 function Footer(props) {
-  return <h1>Footer</h1>;
+  const footerStyle = {
+    background: "black",
+    color: "white",
+    padding: 20,
+    margin: 20,
+  }
+
+  return (
+    <footer style={footerStyle}>
+      <strong>Contact:</strong>
+      <br />
+      dezerey11@gmail.com
+    </footer>
+  )
+  
 }
 
 export default Footer;

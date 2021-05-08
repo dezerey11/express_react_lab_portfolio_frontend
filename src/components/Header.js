@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Button } from "react-bulma-components";
 
 function Header(props) {
 //inline style for the nav tag
@@ -13,17 +14,18 @@ function Header(props) {
 
   return (
     <header>
-      <h1>My Portfolio Page</h1>
+      <h1>Dezerey's Portfolio Page</h1>
       <nav style={navStyle}>
-        <Link to="/">
-          <div>HOME</div>
-        </Link>
-        <Link to="/about">
-          <div>ABOUT</div>
-        </Link>
-        <Link to="/projects">
-          <div>PROJECTS</div>
-        </Link>
+        {/* Links using bulma-react-components */}
+        <Button to="/" renderAs={Link}>
+          Home
+        </Button>
+        <Button to="/about" renderAs={Link}>
+          About
+        </Button>
+        <Button to="/projects" renderAs={Link}>
+          Projects
+        </Button>
       </nav>
     </header>
   );
